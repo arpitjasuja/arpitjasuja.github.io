@@ -293,20 +293,20 @@
                 $('.stack > .v0:not(".vex-closing") button[type="submit"]').focus();
 
                 if ($remaining.length === 3) {
-                    $('.vex:not(".vex-closing")').removeClass('vex-theme-wireframe').addClass('vex-theme-os');
+                    $('.vex:not(".vex-closing")').removeClass('vex-theme-wireframe').addClass('vex-theme-wireframe');
                     var examples = {
                         alert: function() {
-                            vex.dialog.alert({ className: 'vex-theme-os', message: 'This is an alert.' });
+                            vex.dialog.alert({ className: 'vex-theme-wireframe', message: 'This is an alert.' });
                         },
                         confirm: function() {
-                            vex.dialog.confirm({ className: 'vex-theme-os', message: 'Confirm this for me.', callback: function(){} });
+                            vex.dialog.confirm({ className: 'vex-theme-wireframe', message: 'Confirm this for me.', callback: function(){} });
                         },
                         prompt: function() {
-                            vex.dialog.prompt({ className: 'vex-theme-os', message: 'Prompt:', callback: function(){} });
+                            vex.dialog.prompt({ className: 'vex-theme-wireframe', message: 'Prompt:', callback: function(){} });
                         },
                         login: function() {
                             vex.dialog.open({
-                                className: 'vex-theme-os',
+                                className: 'vex-theme-wireframe',
                                 message: 'Enter your username and password:',
                                 input: '' +
                                     '<input name="username" type="text" placeholder="Username" required />' +
@@ -332,7 +332,7 @@
                 }
 
                 if ($remaining.length === 2) {
-                    $('.vex:not(".vex-closing")').removeClass('vex-theme-os').addClass('vex-theme-wireframe');
+                    $('.vex:not(".vex-closing")').removeClass('vex-theme-wireframe').addClass('vex-theme-wireframe');
                     $('.vex.v0:not(".vex-closing")').removeClass('vex-theme-wireframe').addClass('vex-theme-wireframe');
                 }
 
