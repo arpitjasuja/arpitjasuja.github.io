@@ -414,7 +414,7 @@
             $('.demo-link').click(function(){
                 if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || $(window).width() <= 568) {
                     vex.dialog.alert({
-                        className: 'vex-theme-default',
+                        className: 'vex-theme-wireframe',
                         message: 'Please check my website on your desktop!'
                     });
                 } else {
@@ -427,9 +427,9 @@
             
             credits {
                 font-family: "proxima-nova", "Helvetica Neue", sans-serif;
-                position: fixed;
+                position: absolute;
                 bottom: 35px;
-                left: 40%;
+                left: 45%;
                 font-size: 13px;
                 color: #aaa;
             }
