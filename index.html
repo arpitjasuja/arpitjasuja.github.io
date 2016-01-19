@@ -416,7 +416,7 @@
                 if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || $(window).width() <= 568) {
                     vex.dialog.alert({
                         className: 'vex-theme-default',
-                        message: 'This is a vex dialog.'
+                        message: 'Please check my website on your desktop!'
                     });
                 } else {
                     demo.loadInitialDialogs();
@@ -425,22 +425,10 @@
         </script>
 
         <style>
-            #retweet_button {
-                position: fixed;
-                bottom: 30px;
-                left: 50%;
-                width: 100px;
-                margin-left: -90px;
-                -webkit-filter: grayscale(1) contrast(1.3);
-                -webkit-transform: translateZ(0);
-            }
-            #retweet_button:hover {
-                -webkit-filter: none;
-            }
-
+            
             credits {
                 font-family: "proxima-nova", "Helvetica Neue", sans-serif;
-                position: fixed;
+                position: relative;
                 bottom: 35px;
                 left: 40%;
                 font-size: 13px;
@@ -457,27 +445,7 @@
                 color: #444;
             }
 
-            .documentation-link {
-                font-family: "proxima-nova", "Helvetica Neue", sans-serif;
-                position: fixed;
-                bottom: 75px;
-                left: 50%;
-                width: 200px;
-                margin-left: -100px;
-                text-align: center;
-                font-size: 16px;
-            }
-
-            .documentation-link, .documentation-link:link, .documentation-link:visited {
-                color: #000;
-                text-decoration: none;
-            }
-
-            .documentation-link:hover {
-                text-decoration: underline;
-                color: #000;
-            }
-
+            
             #retweet_button, credits, .documentation-link {
                 transition: opacity 200ms;
                 opacity: 1;
